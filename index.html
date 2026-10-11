@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f5ef">
+<meta name="description" content="금융·항공·유통의 익명 기업 사례 30개로 읽는 AI Agent 설계. 데이터, 워크플로우, 업무 규칙을 함께 살펴보세요.">
+<title>AI Agent 설계 사례집</title>
+<link rel="stylesheet" href="style.css">
+<script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#reader">본문으로 이동</a>
+<header class="topbar">
+ <a href="#case-01" class="brand" aria-label="AI Agent 설계 사례집 첫 사례"><span class="brand-mark"><i></i><i></i><i></i></span><span>AI Agent <b>Casebook</b></span></a>
+ <nav class="top-actions" aria-label="도구"><button id="references">용어·참고자료</button><a class="download" href="agent-casebook.md" download aria-label="익명화한 Markdown 파일 내려받기">MD 내려받기 <span aria-hidden="true">↗</span></a></nav>
+</header>
+<div class="layout">
+ <div id="shade" class="shade"></div>
+ <aside id="sidebar" aria-label="사례 탐색">
+  <div class="side-top"><span class="eyebrow">YOUR READING SPACE</span><button id="close-nav" aria-label="사례 목록 닫기">✕</button></div>
+  <h1>AI Agent<br>설계 사례집<span class="title-dot">.</span></h1>
+  <p class="side-description">기업의 상황을 읽고,<br>설계의 판단 기준을 살펴보세요.</p>
+  <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="제목·문제·답안 검색" aria-label="사례 검색" autocomplete="off"><kbd>/</kbd></label>
+  <div class="select-row"><label><span>주제</span><select id="topic"><option value="">모든 주제</option value="T1">데이터·근거</option><option value="T2">Agent·아키텍처</option><option value="T3">업무 규칙</option></select></label><label><span>업종</span><select id="industry"><option value="">모든 업종</option><option>금융</option><option>항공</option><option>유통</option></select></label></div>
+  <div class="list-meta"><span id="result-count">30개 사례</span><button id="saved-filter" aria-pressed="false">저장한 사례</button></div>
+  <div id="case-list" aria-label="사례 목록"><p class="loading">사례를 불러오는 중입니다.</p></div>
+  <div class="progress-box"><div><span>나의 읽기 기록</span><b id="progress-count">0 / 30</b></div><progress id="progress" max="30" value="0" aria-label="읽은 사례"></progress><small>읽음·저장은 이 브라우저에 보관돼요.</small></div>
+ </aside>
+ <main id="reader" tabindex="-1">
+  <div class="mobile-tools"><button id="open-nav">☰ 사례 목록</button><span id="mobile-count">30 CASES</span></div>
+  <section class="intro"><div><span class="eyebrow">ENTERPRISE DESIGN NOTES</span><p>30개의 상황,<br class="mobile-break"> 30가지 설계 접근.</p></div><div class="intro-stats"><span><b>03</b>분야</span><span><b>30</b>사례</span><span><b>120</b>질문·답안</span></div></section>
+  <div class="context-note"><span class="tiny-dot"></span>금융·항공·유통의 익명 가상 사례로 구성했습니다.</div>
+  <article id="case-content"><div class="empty"><h2>사례를 불러오는 중입니다.</h2></div></article>
+  <footer class="main-footer"><span>AI AGENT CASEBOOK</span><span>DATA · WORKFLOW · RULES</span></footer>
+ </main>
+</div>
+<dialog id="reference-dialog"><div class="dialog-head"><div><span class="eyebrow">READING COMPANION</span><h2>용어와 참고자료</h2></div><button id="close-reference" aria-label="참고자료 닫기">✕</button></div><div id="reference-content" class="prose"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
