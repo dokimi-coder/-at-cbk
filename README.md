@@ -1,9 +1,3 @@
-# AI Agent 설계 사례집
-
-금융·항공·유통의 익명 가상 사례 30개와 질문별 설계 답안 120개를 담은 정적 웹페이지입니다.
-
-검색, 주제·업종 필터, 답안 펼치기, 북마크, 읽음 표시와 Markdown 다운로드를 지원합니다. 북마크와 읽음 상태는 브라우저에 저장됩니다.
-
 ## GitHub Pages 배포
 
 Settings → Pages에서 Source를 Deploy from a branch로 선택한 뒤 main 브랜치의 / (root)를 저장합니다.
